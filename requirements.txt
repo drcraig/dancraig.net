@@ -1,1 +1,1 @@
-pelican==3.3
+concorde
