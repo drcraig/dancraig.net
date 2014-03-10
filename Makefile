@@ -1,8 +1,11 @@
 posts := $(patsubst %.md,%.html,$(wildcard site/blog/*.md)) 
 
-.PHONY : all clean
+.PHONY : all clean serve
 
 all: site/index.html site/blog/index.html site/blog/rss.xml $(posts)
+
+serve:
+	cd site && python -m SimpleHTTPServer
 
 clean:
 	-rm site/index.html
