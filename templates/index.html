@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block body %}
+<header>
+<h1>Dan Craig</h1>
+</header>
+
+<section>
+About me
+</section>
+
+<section>
+<header>
+<h1><a href="blog">Blog</a></h1>
+</header>
+
+<ul>
+{% for article in articles %}
+  <li><a href="{{ article.url }}">{{ article.title }}</a></li>
+{% endfor %}
+</ul>
+
+</section>
+{% endblock %}

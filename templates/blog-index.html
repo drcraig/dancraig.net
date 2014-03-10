@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1>Blog Posts</h1>
+
+{% for article in articles %}
+<article>
+<header>
+<h1><a href="{{ article.url }}">{{ article.title }}</a></h1>
+<time datetime="{{ article.date.strftime('%Y-%m-%d') }}">{{ article.date.strftime('%B %d, %Y') }}</time>
+</header>
+{{ article.html }}
+</article>
+
+{% endfor %}
+
+{% endblock %}
