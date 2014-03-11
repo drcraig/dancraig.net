@@ -14,10 +14,10 @@ clean:
 	-rm $(posts)
 
 site/index.html: $(posts) templates/index.html
-	concorde index --template=templates/index.html --output=$@ --output-extension=.html site/blog/
+	concorde index --template=templates/index.html --output=$@ site/blog/
 
 site/blog/index.html : $(posts) templates/blog-index.html
-	concorde index --template=templates/blog-index.html --output=$@ --output-extension=.html site/blog/
+	concorde index --template=templates/blog-index.html --output=$@ site/blog/
 
 site/blog/rss.xml : $(posts)
 	concorde rss --output=$@ --title="Dan Craig's Blog" --url="http://dancraig.net/blog/rss.xml" site/blog/
