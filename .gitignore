@@ -1,3 +1,8 @@
+site/index.html
+site/blog/*.html
+site/blog/rss.xml
+
+
 *.py[cod]
 
 # C extensions
