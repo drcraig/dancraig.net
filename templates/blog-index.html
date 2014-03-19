@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block feed_link %}
+<link rel="alternate" type="application/rss+xml" href="rss.xml" />
+{% endblock %}
+
 {% block body %}
 <h1>Blog Posts</h1>
 

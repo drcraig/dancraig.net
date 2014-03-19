@@ -5,31 +5,56 @@
 <h1>Dan Craig</h1>
 </header>
 
-<section>
-<p>My name is Dan Craig and I'm an aerospace-turned-software engineer in Lexington, Massachusetts.</p>
-</section>
-
+{% if articles %}
 <section>
 <header>
 <h1><a href="blog">Blog</a></h1>
 </header>
 
-<ul>
 {% for article in articles %}
-  <li><a href="{{ article.url }}">{{ article.title }}</a></li>
+<article>
+  <header>
+      <h1><a href="{{ article.url }}">{{ article.title }}</a></h1>
+      <time datetime="{{ article.date.strftime("%Y-%m-%d") }}" pubdate>
+        {{ article.date.strftime("%B %d, %Y") }}
+      </time>
+  </header>
+</article>
 {% endfor %}
-</ul>
 </section>
+{% endif %}
 
 <section>
 <header>
 <h1>Projects</h1>
 </header>
-<h2>XKCD Clock</h2>
-<h2><a href="https://github.com/drcraig/concorde">Concorde</a></h2>
-<p>Static site generator built around Markdown and Jinja</li></p>
-<h2><a href="http://makewayforpiggies.huxleycraig.com">Make Way For Piggies</a></h2>
-<p>Collected prose and poetry my wife posted to Facebook while pregnant with our son.</p>
-</ul>
+
+<article>
+  <header>
+    <h1><a href="https://github.com/drcraig/concorde">Concorde</a></h1>
+  </header>
+  <p>Static site generator built around Markdown and Jinja</p>
+</article>
+
+<article>
+  <header>
+    <h1><a href="/projects/xkcd-clock">XKCD Clock</a></h1>
+  </header>
+  <p>Physical rendition of <a href="http://xkcd.com/now">XKCD: Now</a></p>
+</article>
+
+<article>
+  <header>
+    <h1><a href="http://makewayforpiggies.huxleycraig.com">Make Way For Piggies</a></h1>
+  </header>
+  <p>Collected prose and poetry my wife posted to Facebook while pregnant with our son.</p>
+</article>
+</section>
+
+<section>
+  <header>
+    <h1>About</h1>
+  </header>
+  <p>My name is Dan Craig and I'm an aerospace-turned-software engineer in Lexington, Massachusetts.</p>
 </section>
 {% endblock %}
