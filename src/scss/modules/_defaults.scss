@@ -4,11 +4,86 @@
   text-rendering:optimizeLegibility;
   @include vendor(box-sizing, border-box);
 }
+
+@mixin heading {
+  font-variant: small-caps;
+  font-weight: normal;
+}
+
 html {
-  font-size:62.5%;
+  font-size:22px;
+  font-family: serif;
 }
+
+h1 { 
+    font-size: 1em;
+}
+
 body {
-  font:300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
   background:#fff;
-  color:#444;
+  color:#222;
+  max-width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+  padding: 0em 1em;
+  > header {
+      h1 {
+        @include heading;
+        font-size: 0.8em;
+      }
+      text-align: center;
+      border-bottom: 1px #CCC solid;
+  }
 }
+a {
+  text-decoration: none;
+  color: #222;
+  &:hover {
+      border-bottom: 1px #DDD dashed;
+  }
+}
+
+section {
+    > header {
+        text-align: center;
+        h1 {
+            @include heading;
+            font-size: 20px;
+        }
+        border-bottom: 4px double #EEE;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    margin: 1em 0em 2.5em;
+}
+
+section.blog article header
+{
+    h1 {
+        font-variant: normal;
+        margin-bottom: 0.2em;
+        display: inline-block;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    time {
+        padding-left: 1em;
+        font-size: 14px;
+        font-style: italic;
+        text-align: right;
+    }
+    margin-bottom: 1em;
+}
+
+article {
+  header {
+    text-align: left;
+    h1 {
+        @include heading;
+    }
+  }
+  margin-bottom: 2.5em;
+}
+
