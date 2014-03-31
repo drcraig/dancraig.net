@@ -8,6 +8,7 @@
 @mixin heading {
   font-variant: small-caps;
   font-weight: normal;
+  text-rendering: auto;
 }
 
 html {
@@ -57,6 +58,7 @@ a {
       border-bottom: 1px #DDD dashed;
   }
   font-variant: small-caps;
+  text-rendering: auto;
 }
 
 section {
