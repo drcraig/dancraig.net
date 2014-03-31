@@ -1,11 +1,16 @@
 posts := $(patsubst %.md,%.html,$(wildcard app/blog/*.md)) 
 
-.PHONY : all clean serve
+.PHONY : all clean serve build html
 
-all: app/index.html app/blog/index.html app/blog/rss.xml $(posts)
+all: build
 
-serve:
-	cd app && python -m SimpleHTTPServer
+html: app/index.html app/blog/index.html app/blog/rss.xml $(posts)
+
+serve: html
+	./grunt-dev.command
+
+build: html
+	./grunt-build.command
 
 clean:
 	-rm app/index.html
