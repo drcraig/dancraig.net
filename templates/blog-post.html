@@ -1,11 +1,9 @@
 {% extends "base.html" %}
 
 {% block body %}
-<article>
 <header>
 <h1>{{ title }}</h1>
 <h2>{% if author %}{{ author|join(', ') }} &mdash; {% endif %}<time datetime="{{ date.strftime('%Y-%m-%d') }}">{{ date.strftime('%B %d, %Y') }}</time></h2>
 </header>
 {{ html }}
-</article>
 {% endblock %}

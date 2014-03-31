@@ -15,15 +15,16 @@ html {
   font-family: serif;
 }
 
-h1 { 
-    font-size: 1em;
+h1, h2, h3, h4, h5, h6 { 
+  font-size: 1em;
+  font-weight: normal;
 }
 
 body {
   background:#fff;
   color:#222;
-  max-width: 30em;
   margin-left: auto;
+  max-width: 30em;
   margin-right: auto;
   margin-bottom: 5em;
   padding: 0em 1em;
@@ -31,6 +32,10 @@ body {
       h1 {
         @include heading;
         font-size: 0.8em;
+      }
+      h2 {
+        @include heading;
+        font-size: 0.6em;
       }
       text-align: center;
       border-bottom: 1px #CCC solid;
@@ -82,6 +87,9 @@ article {
     text-align: left;
     h1 {
         @include heading;
+    }
+    h2 {
+        font-size: 16px;
     }
   }
   margin-bottom: 2.5em;
