@@ -41,12 +41,22 @@ body {
       border-bottom: 1px #CCC solid;
   }
 }
+
+img {
+    display: block;
+    max-width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 a {
   text-decoration: none;
   color: #222;
   &:hover {
       border-bottom: 1px #DDD dashed;
   }
+  font-variant: small-caps;
 }
 
 section {
@@ -64,23 +74,37 @@ section {
     margin: 1em 0em 2.5em;
 }
 
-section.blog article header
+#blog article header
 {
     h1 {
         font-variant: normal;
         margin-bottom: 0.2em;
-        display: inline-block;
         font-weight: normal;
         font-size: 20px;
     }
     time {
-        padding-left: 1em;
         font-size: 14px;
         font-style: italic;
-        text-align: right;
     }
     margin-bottom: 1em;
 }
+
+section#blog article header {
+    h1 {
+        display: inline-block;
+    }
+    time {
+        padding-left: 1em;
+        text-align: right;
+    }
+}
+
+main#blog article header {
+    display: block;
+    text-align: center;
+
+}
+
 
 article {
   header {

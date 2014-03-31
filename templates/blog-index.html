@@ -1,12 +1,19 @@
 {% extends "base.html" %}
 
+{% block title %}
+<title>Dan Craig's Blog</title>
+{% endblock %}
+
 {% block feed_link %}
 <link rel="alternate" type="application/rss+xml" href="rss.xml" />
 {% endblock %}
 
 {% block body %}
-<h1>Blog Posts</h1>
+<header>
+<h1><a href="/">Dan Craig</a>'s Blog</h1>
+</header>
 
+<main id="blog">
 {% for article in articles %}
 <article>
 <header>
@@ -17,5 +24,6 @@
 </article>
 
 {% endfor %}
+</main>
 
 {% endblock %}
