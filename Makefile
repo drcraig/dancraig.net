@@ -4,13 +4,16 @@ posts := $(patsubst %.md,%.html,$(wildcard app/blog/*.md))
 
 all: build
 
-html: app/index.html app/blog/index.html app/blog/rss.xml $(posts)
+deploy: build
+	rsync -vcr --exclude=.DS_Store --exclude=.git* --exclude=*.sw* app/ cilantro:~/public_html/dancraig.net/public/
 
 serve: html
 	./grunt-dev.command
 
 build: html
 	./grunt-build.command
+
+html: app/index.html app/blog/index.html app/blog/rss.xml $(posts)
 
 clean:
 	-rm app/index.html
