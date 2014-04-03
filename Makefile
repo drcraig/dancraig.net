@@ -6,6 +6,7 @@ all: build
 
 deploy: build
 	rsync -vcr --exclude=.DS_Store --exclude=.git* --exclude=*.sw* app/ cilantro:~/public_html/dancraig.net/public/
+	ssh -t cilantro sudo "/etc/init.d/apache2 reload"
 
 serve: html
 	./grunt-dev.command
