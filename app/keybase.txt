@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/drcraig
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://dancraig.net
+  * I am drcraig (https://keybase.io/drcraig) on keybase.
+  * I have a public key with fingerprint 59F3 28AF 4344 37EB 45A0  6F7D 704A 91E9 FD28 8322
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "59f328af434437eb45a06f7d704a91e9fd288322",
+            "host": "keybase.io",
+            "key_id": "704a91e9fd288322",
+            "uid": "f80cccb830bee413687bc11129b0a100",
+            "username": "drcraig"
+        },
+        "service": {
+            "hostname": "dancraig.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1397154874,
+    "expire_in": 157680000,
+    "prev": "8ff4e95e80aa7840eb9eb79ba0ae5232993c863fc354b3651dea30d02d90a7e2",
+    "seqno": 2,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.5
+Comment: https://keybase.io/crypto
+
+yMHlAnicbZFdSBRfGMZXs2VdEiQISfKiKSvYzWbmzOzMLG3YSmF/u8jEipDWMzNn
+1imdGWdnN2XdTSgTMTAr0ogyJCtLujIo8cIkKvpyjYg/LCaFRF30gWVfGHlmybvm
+5uU87+953nPmvZe3xOHOKlvT7pqT4yDr8djnqKNq+4w/Toi63EzgeghliqJqYWQa
+pqpZhJ9gBQXQPFQYwDCAQyLDQtKncDJHMlCgkKDINM8Dmia8RJ0esR04RoQRVKLq
+WMOHkCpj9R98NNNQeFKSJJEHpIgQQwEfz4kSRVG0IJKQIkkbjCBTgw0I07IpmVAN
+EwkvgcWYKmExnpm8CEAtQ5RoyMJWw9QtXdLrcafOsgy/bbSaDZs8jMTQ34yQqGoy
+fjY2xJAZUXWN8FOYlCzVDqWAwFEsw3OMl0BNhmqikGoTLOfjSfzZY1AMR/KKwiCB
+RTwJIcczJBIFJHKCCEmIWBrQggAk3gcUCbCMCHwsJSMISJmkZYGEHLJ/SgQ1ajrh
+p/E1YRhHRtSwBq2oiYjE+FhNjiPL7XAuzbYX53Dn5i+u8/8el6O9t2O4eyjZk3sw
+v7U5+byyNr0hpUcLk2nx3a3YlXJfa8XN3S0VvNt3f5s7m36RVzP0aXqk8IDR/fIi
+sZHvP/F+xV6wuajv5MMkZXguBVzTIETduO2+VlfpHTllWjNUfMv5ia7hgjflzmHn
+aP/RV2erPA3cnau/BQ/9bM+Djh2bvrx1JZzh9cuNye9bA5WpRHX1eN/8h6/lox/n
+vKefct925fb7renGlbNH/vtTvzOYMtOB2tWqPEWMUW0TwetV536lXrftX0YMTu27
+W3ohOBMs+zEbWNVJTxa7hp4MgoGyictdx4SWvNJ1803p3gFPUfLM2p+dx3OKcxyP
+CmYXAOLXC0c=
+=0PzE
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/drcraig
+
+==================================================================
