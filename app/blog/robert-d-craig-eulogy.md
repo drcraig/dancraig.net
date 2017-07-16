@@ -2,7 +2,7 @@ Title: Eulogy for my Father, Robert D. Craig
 Author: Dan Craig
 Date: 6/16/2017
 
-*Delivered at St. John the Baptist Catholic Church in Edmond, Oklahoma on June 15, 2017. Robert Craig passed away in Oklahoma City on June 9, 2017.*
+*Delivered at St. John the Baptist Catholic Church in Edmond, Oklahoma on June 15, 2017. Robert Craig passed away in Oklahoma&nbsp;City on June 9, 2017.*
 
 Thank you all for coming. It means a great deal to our family to see all of the people who knew and loved Dad all together. He would have appreciated it.
 
