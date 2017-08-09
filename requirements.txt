@@ -1,1 +1,1 @@
-concorde
+concorde>=0.1.2
