@@ -1,6 +1,7 @@
 app/index.html
 app/blog/*.html
 app/blog/rss.xml
+.venv/
 
 
 *.py[cod]
