@@ -1,6 +1,6 @@
 path=`dirname $0`
 cd $path
 if [ ! -d node_modules ];then
-    pm install
+    npm install
 fi
 grunt build
